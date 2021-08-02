@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Touch the Numbers!</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body onload="init(gUserNum)">
+    <h1>Touch the Numbers!</h1>
+
+
+    <!-- <button onclick="init()">New Game</button> -->
+
+    <div class="timer">Game Time: <span></span></div>
+    <div class="next">Next Number: <span></span></div>
+    <table cellpadding="25" class="board">
+        <tbody></tbody>
+    </table>
+
+    <div class="difficulty">
+        Select Difficulty
+        <button type="reset"  onclick="chooseDifficulty(16)">Easy</button>
+        <button type="reset"  onclick="chooseDifficulty(25)">Normal</button>
+        <button type="reset"  onclick="chooseDifficulty(36)">Hard</button>
+
+
+    </div>
+
+    <div class="modal">
+        <button onclick="closeModal()">x</button>
+        <h2>Congratulations! You won! 🐱‍👤🐱‍👤🐱‍👤🐱‍👤🐱‍👤🐱‍👤</h2>
+    </div>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+
+</html>
